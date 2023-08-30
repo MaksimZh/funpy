@@ -1,4 +1,4 @@
-from pymonad import curry, Just, Nothing
+from pymonad import Just, Nothing
 
 put = lambda dl, dr: lambda lr: Just((lr[0] + dl, lr[1] + dr))
 stands = lambda max_delta: lambda lr: \
